@@ -156,11 +156,11 @@ header a:hover {
 }
 
 .destaque li:nth-of-type(2) div {
-  background-image: url('../img/destaque-2.jpg');
+  background-image: url('../img/destaque-1.jpg');
 }
 
 .destaque li:nth-of-type(3) div {
-  background-image: url('../img/destaque-3.jpg');
+  background-image: url('../img/destaque-1.jpg');
 }
 
 .destaque div {
