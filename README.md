@@ -3,4 +3,7 @@ Curso FrontEnd Facens
 
 Repositorio do curso de font end
 
-Professor [felipe bernades ] (http://github.com)
+# Professor
+Professor [felipe bernades ] (https://github.com/felipebernardes)
+
+## https://github.com/felipebernardes
