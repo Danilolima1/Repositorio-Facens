@@ -1,19 +1,4 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @Danilolima1
- Watch 2
-  Unstar 12
-  Fork 2 felipebernardes/frontend-facens-2016
- Code  Issues 4  Pull requests 0  Wiki  Pulse  Graphs
-Tree: 8d7f2ae92b Find file Copy pathfrontend-facens-2016/projeto/css/style.css
-8d7f2ae  10 minutes ago
-@felipebernardes felipebernardes Inclui estilo da nav
-1 contributor
-RawBlameHistory     307 lines (248 sloc)  3.74 KB
+
 /* Reset - Base */
 h1,
 h2,
@@ -66,7 +51,7 @@ nav ul {
 
 nav li {
   width: 25%;
-  height: 10vh;
+  height: 15vh;
   text-align: center;
   display: flex;
 }
@@ -303,6 +288,7 @@ footer {
   min-height: 10vh;
   background-color: #fff;
   display: flex;
+    padding-bottom: 10vh;
 }
 
 footer ul {
@@ -320,5 +306,3 @@ footer a {
 footer li {
   margin: auto;
 }
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
