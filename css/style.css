@@ -1,170 +1,184 @@
-/* Reset ou base*/
-
-body {
-  font-family: 'Montserrat', sans-serif;
-}
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @Danilolima1
+ Watch 2
+  Unstar 12
+  Fork 2 felipebernardes/frontend-facens-2016
+ Code  Issues 4  Pull requests 0  Wiki  Pulse  Graphs
+Tree: 8d7f2ae92b Find file Copy pathfrontend-facens-2016/projeto/css/style.css
+8d7f2ae  10 minutes ago
+@felipebernardes felipebernardes Inclui estilo da nav
+1 contributor
+RawBlameHistory     307 lines (248 sloc)  3.74 KB
+/* Reset - Base */
 h1,
 h2,
 h3,
 p {
-    margin: 0;
-    
+  margin: 0;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
-*
-{
-    box-sizing:     border-box;
-    
+
+* {
+  box-sizing: border-box;
 }
-img{
-    max-width: 100%;
+
+img {
+  max-width: 100%;
 }
-ul{
-    padding: 0;
-    list-style: none;
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
 a {
-    color:#000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
-/* --- Header --- */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* nav */
+nav {
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,50,0.8);
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  width: 25%;
+  height: 10vh;
+  text-align: center;
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  display: block;
+  margin: auto;
+}
+
+nav span {
+  display: block;
+}
+
+nav .fa {
+  font-size: 1.8rem;
+}
+
+nav span:not(.fa) {
+  font-size: 0.8rem;
+}
+
+
+/* header */
+
 header {
-    
- /*   background-image: url("../img/bg-header.jpg"); */
-    background-size: cover;
-    background-position: center;
-    background-color: #00BFFF;
-    color: #FFF;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column;
-    justify-content:  center;
-    position: relative;  
-    z-index: -2;
+  background-color: #30d5c6;
+  text-align: center;
+  color: #FFF;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  background-image: url('../img/bg-header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
 }
 
-header:after{
-    content: ' ';
-    position: absolute;
-    left:0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: -1;
-
+header:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: -1;
 }
+
+header div {
+  margin: auto;
+  min-width: 250px;
+  position: relative;
+}
+
 h1 {
-    font-size: 16px;
-
-
-}
-
-
-
-header div{
-    margin : auto;
+  font-size: 30px;
 }
 
 p {
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  font-size: 16px;
+  margin: 20px auto;
 }
-
+/* facebook.com/bernardes.felipe */
 header a {
-    display: block;
-    background-color: rgba(0,0,20,0.6);
-    color:#fff;
-    margin: auto;
-    max-width: 160px;
-    padding: 12px 0;
-    border-radius: 4px;
-    text-transform: uppercase;
-    transition: all 0.15s ease;
-    font-weight: bold;
-    font-size: 14px;
+  display: block;
+  background-color: rgba(0,20,0,0.5);
+  max-width: 160px;
+  color: #FFF;
+  margin: auto;
+  padding: 12px 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: all .2s ease;
+  font-weight: bold;
+  font-size: 13px;
 }
 
 header a:hover {
-    
-   background-color: rgba(0,0,20,0.7);
+    background-color: rgba(0,20,0,.7);
 }
 
-/* --- media query -- */
 
-@media  (min-width:420px) {
-    
-     header {
-        background-color: #abc;
-    }
-    
+/* destaque */
+
+.destaque {
+  text-align: center;
 }
 
-@media  (min-width:768px) {
-    h1{
-       font-size: 32px; 
-    }
-    
-    header {
-        background-color: #bbf;
-    }
-    
-    .destaque ul {
-        display: flex;
-    }
-    
+.destaque h2 {
+  margin: 30px auto;
 }
 
-@media  (min-width:124px) {
-    
-   header {
-        background-color: #cdfc;
-    }
-    
+.destaque li {
+  margin: 50px auto;
 }
-/* --- Destaque ---*/
-.destaque{
-  /*  min-height: 100vh;*/
-    text-align: center;
-}
-.destaque li{
-    margin-top: 50px;
-    margin-Bottom:50px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.destaque h2{
-    
-    margin-top: 30px;
-    margin-Bottom:30px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-ul li{
-    list-style: none;
-}
-
 
 .destaque li:nth-of-type(1) div {
-     background-image: url('../img/bg-destaque-1.jpg');
+  background-image: url('../img/destaque-1.jpg');
 }
 
 .destaque li:nth-of-type(2) div {
-     background-image: url('../img/bg-destaque-2.png');
+  background-image: url('../img/destaque-2.jpg');
 }
 
 .destaque li:nth-of-type(3) div {
-     background-image: url('../img/bg-destaque.png');
+  background-image: url('../img/destaque-3.jpg');
 }
 
-
-.destaque div{
+.destaque div {
   margin: auto;
   height: 190px;
   width: 190px;
@@ -173,77 +187,138 @@ ul li{
   background-position: center;
   background-attachment: fixed;
   margin-bottom: 16px;
-    
 }
 
-  .destaque div: {
-      margin-Top: auto
-    }
+@media (min-width: 768px) {
+  .destaque ul {
+    display: flex;
+  }
+
+}
 
 /* detail */
 
 .detail {
-    padding: 0 5%;
-
-}
-.detail h2{
-
-    color: #888;
-    font-weight: bold;
+  padding: 0 5%;
 }
 
-
-@media (min-width:768px){
-    body{
-        background-color: aqua;
-    }
-    .detail{
-        display: flex;
-       flex-flow: row wrap;
-       
-      
-    }
-    .detail .image-container{
-        max-width: 50%;
-    }
-    
-    .detail h2 {
-        width: 100%;
-        text-align: left;
-    }
-    
-    .detail-right p{
-        order: 1;
-    }
-    .detail p {
-        width:50%;
-  
-        
-     
-    }
-    .detail img{
-        padding-left: 21%;
-    }
-    
+.detail h2 {
+  color: #888;
+  font-weight: bold;
 }
 
-/*--- Faixa ---*/
+@media (min-width: 768px) {
+  .detail {
+    display: flex;
+    flex-flow: row wrap;
+  }
 
-.faixa{
-    
-    background-color: #999;
-    text-align: center;
-    padding: 5vh 5vw;
-    color:#fff;
-    margin: 5vh 0;
+  .detail h2 {
+    width: 100%;
+    text-align: left;
+  }
+
+  .detail-right h2 {
+    text-align: right;
+  }
+
+  .detail .img-container {
+    width: 50%;
+  }
+
+  .detail p {
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .detail-right .img-container {
+    order: 0;
+  }
+
+  .detail-right p {
+    order: 1;
+  }
+
 }
 
-/* --- Contato --- */
+/* faixa */
+.faixa {
+  background-color: #333;
+  text-align: center;
+  padding: 5vh 5vw;
+  margin: 5vh 0;
+  color: #fff;
+}
+
+/* contato */
 
 .contact {
-    background-color: #999;
-    min-height: 100vh;
-    padding:  5vh 5vw;
-    display: flex;
-    flex-flow: column;
+  background-color: #999;
+  min-height: 90vh;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
 }
+
+.contact h2,
+.contact p,
+.contact ul {
+  margin: auto;
+}
+
+.contact a {
+  color: #fff;
+  background-color: rgba(123,231,50,0.5);
+  padding: 16px;
+  display: block;
+  max-width: 240px;
+  margin: 10px auto;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    min-height: 30vh;
+    flex-flow: row wrap;
+  }
+
+  .contact h2 {
+    width: 100%;
+  }
+
+  .contact p {
+    width: 50%;
+    max-width: 300px;
+  }
+
+  .contact ul {
+    width: 50%;
+  }
+
+
+}
+
+/* footer */
+footer {
+  min-height: 10vh;
+  background-color: #fff;
+  display: flex;
+}
+
+footer ul {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  width: 100%;
+}
+
+footer a {
+  padding: 10px;
+  font-size: 30px;
+}
+
+footer li {
+  margin: auto;
+}
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help
